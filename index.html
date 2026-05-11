@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCHIVO GLOBAL — Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">ARCHIVO<span>GLOBAL</span></div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">CATÁLOGO</a></li>
+      <li><a href="#">BEST SELLER</a></li>
+      <li><a href="#">GUÍA</a></li>
+    </ul>
+    <div class="nav-tag">✦ USFANS VERIFIED</div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>ARCHIVO GLOBAL</h1>
+    <p>Selección curada de los mejores productos disponibles.</p>
+  </header>
+
+  <!-- FILTERS -->
+  <section class="filters">
+    <input type="text" id="searchInput" placeholder="Buscar producto o marca..." />
+    <select id="categoryFilter">
+      <option value="">Todas las Categorías</option>
+      <option value="zapatillas">Zapatillas</option>
+      <option value="ropa">Ropa</option>
+      <option value="bolsos">Bolsos</option>
+      <option value="cinturones">Cinturones</option>
+      <option value="accesorios">Accesorios</option>
+    </select>
+    <select id="brandFilter">
+      <option value="">Todas las Marcas</option>
+    </select>
+    <select id="sortFilter">
+      <option value="newest">Novedades</option>
+      <option value="price-asc">Precio: menor a mayor</option>
+      <option value="price-desc">Precio: mayor a menor</option>
+    </select>
+  </section>
+
+  <!-- GRID -->
+  <main class="grid" id="productGrid"></main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-img-wrap">
+        <img id="modalImg" src="" alt="" />
+      </div>
+      <div class="modal-info">
+        <span class="modal-brand" id="modalBrand"></span>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+        <a class="modal-btn" id="modalLink" href="#" target="_blank" rel="noopener">
+          VER PRODUCTO ↗
+        </a>
+        <p class="modal-disclaimer">Serás redirigido a la tienda externa.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Archivo Global — Catálogo curado. Los productos son de terceros.</p>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
