@@ -1,81 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARCHIVO GLOBAL — Catálogo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GOLD FANS — Lujo Curado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <div class="nav-logo">ARCHIVO<span>GLOBAL</span></div>
-    <ul class="nav-links">
-      <li><a href="#" class="active">CATÁLOGO</a></li>
-      <li><a href="#">BEST SELLER</a></li>
-      <li><a href="#">GUÍA</a></li>
-    </ul>
-    <div class="nav-tag">✦ USFANS VERIFIED</div>
-  </nav>
+<!-- NAV -->
+<nav id="navbar">
+<div class="nav-logo">GOLD<span>FANS</span></div>
+<ul class="nav-links">
+<li><a href="#inicio">INICIO</a></li>
+<li><a href="#categorias">CATEGORÍAS</a></li>
+<li><a href="#catalogo">CATÁLOGO</a></li>
+</ul>
+<div class="nav-tag">✦ CURADO</div>
+</nav>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1>ARCHIVO GLOBAL</h1>
-    <p>Selección curada de los mejores productos disponibles.</p>
-  </header>
+<!-- HERO / LANDING -->
+<section class="hero" id="inicio">
+<div class="hero-bg"></div>
+<div class="hero-content">
+<p class="hero-pre">SELECCIÓN EXCLUSIVA</p>
+<h1 class="hero-title">GOLD<em>FANS</em></h1>
+<p class="hero-sub">Los mejores productos de lujo y streetwear,<br>curados para ti en un solo lugar.</p>
+<a href="#categorias" class="hero-btn">EXPLORAR COLECCIÓN</a>
+</div>
+<div class="hero-scroll">SCROLL ↓</div>
+</section>
 
-  <!-- FILTERS -->
-  <section class="filters">
-    <input type="text" id="searchInput" placeholder="Buscar producto o marca..." />
-    <select id="categoryFilter">
-      <option value="">Todas las Categorías</option>
-      <option value="zapatillas">Zapatillas</option>
-      <option value="ropa">Ropa</option>
-      <option value="bolsos">Bolsos</option>
-      <option value="cinturones">Cinturones</option>
-      <option value="accesorios">Accesorios</option>
-    </select>
-    <select id="brandFilter">
-      <option value="">Todas las Marcas</option>
-    </select>
-    <select id="sortFilter">
-      <option value="newest">Novedades</option>
-      <option value="price-asc">Precio: menor a mayor</option>
-      <option value="price-desc">Precio: mayor a menor</option>
-    </select>
-  </section>
+<!-- CATEGORIAS -->
+<section class="categories-section" id="categorias">
+<div class="section-header">
+<p class="section-pre">COLECCIONES</p>
+<h2 class="section-title">Elige tu categoría</h2>
+</div>
+<div class="categories-grid">
+<div class="cat-card" data-cat="zapatillas">
+<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80')"></div>
+<div class="cat-overlay">
+<span class="cat-label">ZAPATILLAS</span>
+</div>
+</div>
+<div class="cat-card" data-cat="sudaderas">
+<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&q=80')"></div>
+<div class="cat-overlay">
+<span class="cat-label">SUDADERAS</span>
+</div>
+</div>
+<div class="cat-card" data-cat="camisetas">
+<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80')"></div>
+<div class="cat-overlay">
+<span class="cat-label">CAMISETAS</span>
+</div>
+</div>
+<div class="cat-card" data-cat="bolsos">
+<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80')"></div>
+<div class="cat-overlay">
+<span class="cat-label">BOLSOS</span>
+</div>
+</div>
+<div class="cat-card" data-cat="cinturones">
+<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80')"></div>
+<div class="cat-overlay">
+<span class="cat-label">CINTURONES</span>
+</div>
+</div>
+<div class="cat-card" data-cat="accesorios">
+<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&q=80')"></div>
+<div class="cat-overlay">
+<span class="cat-label">ACCESORIOS</span>
+</div>
+</div>
+<div class="cat-card cat-card--wide" data-cat="relojes">
+<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&q=80')"></div>
+<div class="cat-overlay">
+<span class="cat-label">RELOJES</span>
+</div>
+</div>
+</div>
+</section>
 
-  <!-- GRID -->
-  <main class="grid" id="productGrid"></main>
+<!-- CATALOGO -->
+<section class="catalog-section" id="catalogo">
+<div class="section-header">
+<p class="section-pre">ARCHIVO</p>
+<h2 class="section-title">Catálogo completo</h2>
+</div>
 
-  <!-- MODAL -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal">
-      <button class="modal-close" id="modalClose">✕</button>
-      <div class="modal-img-wrap">
-        <img id="modalImg" src="" alt="" />
-      </div>
-      <div class="modal-info">
-        <span class="modal-brand" id="modalBrand"></span>
-        <h2 class="modal-title" id="modalTitle"></h2>
-        <p class="modal-price" id="modalPrice"></p>
-        <p class="modal-desc" id="modalDesc"></p>
-        <a class="modal-btn" id="modalLink" href="#" target="_blank" rel="noopener">
-          VER PRODUCTO ↗
-        </a>
-        <p class="modal-disclaimer">Serás redirigido a la tienda externa.</p>
-      </div>
-    </div>
-  </div>
+<!-- FILTERS -->
+<div class="filters">
+<input type="text" id="searchInput" placeholder="Buscar producto o marca..." />
+<select id="categoryFilter">
+<option value="">Todas las Categorías</option>
+<option value="zapatillas">Zapatillas</option>
+<option value="sudaderas">Sudaderas</option>
+<option value="camisetas">Camisetas</option>
+<option value="bolsos">Bolsos</option>
+<option value="cinturones">Cinturones</option>
+<option value="accesorios">Accesorios</option>
+<option value="relojes">Relojes</option>
+</select>
+<select id="brandFilter"><option value="">Todas las Marcas</option></select>
+<select id="sortFilter">
+<option value="newest">Novedades</option>
+<option value="price-asc">Precio: menor a mayor</option>
+<option value="price-desc">Precio: mayor a menor</option>
+</select>
+</div>
 
-  <footer>
-    <p>© 2025 Archivo Global — Catálogo curado. Los productos son de terceros.</p>
-  </footer>
+<main class="grid" id="productGrid"></main>
+</section>
 
-  <script src="products.js"></script>
-  <script src="app.js"></script>
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+<div class="modal">
+<button class="modal-close" id="modalClose">✕</button>
+<div class="modal-img-wrap">
+<img id="modalImg" src="" alt="" />
+</div>
+<div class="modal-info">
+<span class="modal-brand" id="modalBrand"></span>
+<h2 class="modal-title" id="modalTitle"></h2>
+<p class="modal-price" id="modalPrice"></p>
+<p class="modal-desc" id="modalDesc"></p>
+<a class="modal-btn" id="modalLink" href="#" target="_blank" rel="noopener">
+VER PRODUCTO ↗
+</a>
+<p class="modal-disclaimer">Serás redirigido a la tienda externa.</p>
+</div>
+</div>
+</div>
+
+<footer>
+<div class="footer-logo">GOLD<span>FANS</span></div>
+<p>© 2025 Gold Fans — Catálogo curado de lujo y streetwear.</p>
+</footer>
+
+<script src="products.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
