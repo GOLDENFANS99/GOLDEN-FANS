@@ -1,147 +1,277 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>GOLD FANS — Lujo Curado</title>
+<title>GOLD FANS — Lujo Original</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <!-- NAV -->
+
 <nav id="navbar">
 <div class="nav-logo">GOLD<span>FANS</span></div>
 <ul class="nav-links">
 <li><a href="#inicio">INICIO</a></li>
+<li><a href="#destacados">DESTACADOS</a></li>
 <li><a href="#categorias">CATEGORÍAS</a></li>
 <li><a href="#catalogo">CATÁLOGO</a></li>
 </ul>
-<div class="nav-tag">✦ CURADO</div>
+<div class="nav-tag">✦ 100% ORIGINAL</div>
+<button class="nav-hamburger" id="navHamburger">☰</button>
 </nav>
 
-<!-- HERO / LANDING -->
-<section class="hero" id="inicio">
-<div class="hero-bg"></div>
-<div class="hero-content">
-<p class="hero-pre">SELECCIÓN EXCLUSIVA</p>
-<h1 class="hero-title">GOLD<em>FANS</em></h1>
-<p class="hero-sub">Los mejores productos de lujo y streetwear,<br>curados para ti en un solo lugar.</p>
-<a href="#categorias" class="hero-btn">EXPLORAR COLECCIÓN</a>
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="#inicio" class="mobile-link">INICIO</a>
+<a href="#destacados" class="mobile-link">DESTACADOS</a>
+<a href="#categorias" class="mobile-link">CATEGORÍAS</a>
+<a href="#catalogo" class="mobile-link">CATÁLOGO</a>
 </div>
-<div class="hero-scroll">SCROLL ↓</div>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+<!-- Video background -->
+<div class="hero-video-wrap">
+<video autoplay muted loop playsinline class="hero-video">
+<source src="https://cdn.coverr.co/videos/coverr-luxury-fashion-woman-walking-4k-9562/1080p.mp4" type="video/mp4" />
+</video>
+<div class="hero-video-overlay"></div>
+</div>
+
+```
+<div class="hero-content">
+<p class="hero-pre reveal-text">SELECCIÓN EXCLUSIVA</p>
+<h1 class="hero-title">
+<span class="title-word">GOLD</span><em class="title-word">FANS</em>
+</h1>
+<div class="hero-divider"></div>
+<p class="hero-sub reveal-text">
+Aquí encontraréis los mejores descuentos de marcas de lujo.<br>
+<strong>100×100 originales.</strong> Emporio Armani, Guess, Lacoste y mucho más.
+</p>
+<div class="hero-brands reveal-text">
+<span>EMPORIO ARMANI</span>
+<span>·</span>
+<span>GUESS</span>
+<span>·</span>
+<span>LACOSTE</span>
+<span>·</span>
+<span>NIKE</span>
+<span>·</span>
+<span>ADIDAS</span>
+</div>
+<a href="#destacados" class="hero-btn reveal-text">EXPLORAR COLECCIÓN ↓</a>
+</div>
+
+<div class="hero-scroll">
+<div class="scroll-line"></div>
+<span>SCROLL</span>
+</div>
+```
+
+</section>
+
+<!-- TICKER -->
+
+<div class="ticker-wrap">
+<div class="ticker">
+<span>EMPORIO ARMANI</span><span>✦</span>
+<span>GUESS</span><span>✦</span>
+<span>LACOSTE</span><span>✦</span>
+<span>NIKE</span><span>✦</span>
+<span>ADIDAS</span><span>✦</span>
+<span>TOMMY HILFIGER</span><span>✦</span>
+<span>RALPH LAUREN</span><span>✦</span>
+<span>CALVIN KLEIN</span><span>✦</span>
+<span>EMPORIO ARMANI</span><span>✦</span>
+<span>GUESS</span><span>✦</span>
+<span>LACOSTE</span><span>✦</span>
+<span>NIKE</span><span>✦</span>
+<span>ADIDAS</span><span>✦</span>
+<span>TOMMY HILFIGER</span><span>✦</span>
+<span>RALPH LAUREN</span><span>✦</span>
+<span>CALVIN KLEIN</span><span>✦</span>
+</div>
+</div>
+
+<!-- DESTACADOS -->
+
+<section class="featured-section" id="destacados">
+<div class="section-header">
+<p class="section-pre">LO MÁS BUSCADO</p>
+<h2 class="section-title">Productos <em>Destacados</em></h2>
+<p class="section-sub">Una selección de los mejores descuentos disponibles ahora mismo</p>
+</div>
+<div class="featured-grid" id="featuredGrid"></div>
 </section>
 
 <!-- CATEGORIAS -->
+
 <section class="categories-section" id="categorias">
 <div class="section-header">
-<p class="section-pre">COLECCIONES</p>
-<h2 class="section-title">Elige tu categoría</h2>
+<p class="section-pre">EXPLORAR</p>
+<h2 class="section-title">Categorías</h2>
 </div>
-<div class="categories-grid">
-<div class="cat-card" data-cat="zapatillas">
-<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80')"></div>
-<div class="cat-overlay">
-<span class="cat-label">ZAPATILLAS</span>
+<div class="cat-main-grid">
+
+```
+<!-- CAMISETAS -->
+<div class="cat-main-card" data-maincategory="camisetas">
+<div class="cat-main-img" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80')"></div>
+<div class="cat-main-overlay">
+<span class="cat-main-label">CAMISETAS</span>
+<span class="cat-main-arrow">→</span>
 </div>
-</div>
-<div class="cat-card" data-cat="sudaderas">
-<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&q=80')"></div>
-<div class="cat-overlay">
-<span class="cat-label">SUDADERAS</span>
-</div>
-</div>
-<div class="cat-card" data-cat="camisetas">
-<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80')"></div>
-<div class="cat-overlay">
-<span class="cat-label">CAMISETAS</span>
-</div>
-</div>
-<div class="cat-card" data-cat="bolsos">
-<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80')"></div>
-<div class="cat-overlay">
-<span class="cat-label">BOLSOS</span>
-</div>
-</div>
-<div class="cat-card" data-cat="cinturones">
-<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80')"></div>
-<div class="cat-overlay">
-<span class="cat-label">CINTURONES</span>
-</div>
-</div>
-<div class="cat-card" data-cat="accesorios">
-<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&q=80')"></div>
-<div class="cat-overlay">
-<span class="cat-label">ACCESORIOS</span>
-</div>
-</div>
-<div class="cat-card cat-card--wide" data-cat="relojes">
-<div class="cat-img" style="background-image:url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&q=80')"></div>
-<div class="cat-overlay">
-<span class="cat-label">RELOJES</span>
+<div class="cat-sub-menu">
+<p class="cat-sub-title">CAMISETAS</p>
+<div class="cat-sub-items">
+<span class="cat-sub-item" data-cat="camisetas-cortas">Camisetas Cortas</span>
+<span class="cat-sub-item" data-cat="polos">Polos</span>
+<span class="cat-sub-item" data-cat="camisetas-manga-larga">Manga Larga</span>
+<span class="cat-sub-item" data-cat="camisetas">Ver todas</span>
 </div>
 </div>
 </div>
+
+<!-- PANTALONES -->
+<div class="cat-main-card" data-maincategory="pantalones">
+<div class="cat-main-img" style="background-image:url('https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&q=80')"></div>
+<div class="cat-main-overlay">
+<span class="cat-main-label">PANTALONES</span>
+<span class="cat-main-arrow">→</span>
+</div>
+<div class="cat-sub-menu">
+<p class="cat-sub-title">PANTALONES</p>
+<div class="cat-sub-items">
+<span class="cat-sub-item" data-cat="pantalones-largos">Pantalones Largos</span>
+<span class="cat-sub-item" data-cat="vaqueros">Vaqueros</span>
+<span class="cat-sub-item" data-cat="pantalones-cortos">Pantalones Cortos</span>
+<span class="cat-sub-item" data-cat="pantalones">Ver todos</span>
+</div>
+</div>
+</div>
+
+<!-- CHANDALS -->
+<div class="cat-main-card" data-maincategory="chandals">
+<div class="cat-main-img" style="background-image:url('https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&q=80')"></div>
+<div class="cat-main-overlay">
+<span class="cat-main-label">CHÁNDALS</span>
+<span class="cat-main-arrow">→</span>
+</div>
+<div class="cat-sub-menu">
+<p class="cat-sub-title">CHÁNDALS</p>
+<div class="cat-sub-items">
+<span class="cat-sub-item" data-cat="chandals-completos">Chándals Completos</span>
+<span class="cat-sub-item" data-cat="sudaderas">Sudaderas</span>
+<span class="cat-sub-item" data-cat="pantalones-chandal">Pantalones Chándal</span>
+<span class="cat-sub-item" data-cat="chandals">Ver todos</span>
+</div>
+</div>
+</div>
+
+<!-- ZAPATILLAS -->
+<div class="cat-main-card" data-maincategory="zapatillas">
+<div class="cat-main-img" style="background-image:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80')"></div>
+<div class="cat-main-overlay">
+<span class="cat-main-label">ZAPATILLAS</span>
+<span class="cat-main-arrow">→</span>
+</div>
+<div class="cat-sub-menu">
+<p class="cat-sub-title">ZAPATILLAS</p>
+<div class="cat-sub-items">
+<span class="cat-sub-item" data-cat="zapatillas-nike">Nike</span>
+<span class="cat-sub-item" data-cat="zapatillas-adidas">Adidas</span>
+<span class="cat-sub-item" data-cat="zapatillas-armani">Emporio Armani</span>
+<span class="cat-sub-item" data-cat="zapatillas-guess">Guess</span>
+<span class="cat-sub-item" data-cat="zapatillas">Ver todas</span>
+</div>
+</div>
+</div>
+
+<!-- ACCESORIOS -->
+<div class="cat-main-card cat-main-card--wide" data-maincategory="accesorios">
+<div class="cat-main-img" style="background-image:url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80')"></div>
+<div class="cat-main-overlay">
+<span class="cat-main-label">ACCESORIOS</span>
+<span class="cat-main-arrow">→</span>
+</div>
+<div class="cat-sub-menu">
+<p class="cat-sub-title">ACCESORIOS</p>
+<div class="cat-sub-items">
+<span class="cat-sub-item" data-cat="gorras">Gorras</span>
+<span class="cat-sub-item" data-cat="bolsos">Bolsos</span>
+<span class="cat-sub-item" data-cat="mochilas">Mochilas</span>
+<span class="cat-sub-item" data-cat="cinturones">Cinturones</span>
+<span class="cat-sub-item" data-cat="accesorios">Ver todos</span>
+</div>
+</div>
+</div>
+
+</div>
+```
+
 </section>
 
 <!-- CATALOGO -->
+
 <section class="catalog-section" id="catalogo">
 <div class="section-header">
-<p class="section-pre">ARCHIVO</p>
-<h2 class="section-title">Catálogo completo</h2>
+<p class="section-pre">ARCHIVO COMPLETO</p>
+<h2 class="section-title">Catálogo <em>Global</em></h2>
 </div>
-
-<!-- FILTERS -->
 <div class="filters">
 <input type="text" id="searchInput" placeholder="Buscar producto o marca..." />
-<select id="categoryFilter">
-<option value="">Todas las Categorías</option>
-<option value="zapatillas">Zapatillas</option>
-<option value="sudaderas">Sudaderas</option>
-<option value="camisetas">Camisetas</option>
-<option value="bolsos">Bolsos</option>
-<option value="cinturones">Cinturones</option>
-<option value="accesorios">Accesorios</option>
-<option value="relojes">Relojes</option>
-</select>
+<select id="categoryFilter"><option value="">Todas las Categorías</option></select>
 <select id="brandFilter"><option value="">Todas las Marcas</option></select>
 <select id="sortFilter">
 <option value="newest">Novedades</option>
-<option value="price-asc">Precio: menor a mayor</option>
-<option value="price-desc">Precio: mayor a menor</option>
+<option value="price-asc">Precio ↑</option>
+<option value="price-desc">Precio ↓</option>
 </select>
 </div>
-
 <main class="grid" id="productGrid"></main>
 </section>
 
 <!-- MODAL -->
+
 <div class="modal-overlay" id="modalOverlay">
 <div class="modal">
 <button class="modal-close" id="modalClose">✕</button>
-<div class="modal-img-wrap">
-<img id="modalImg" src="" alt="" />
-</div>
+<div class="modal-img-wrap"><img id="modalImg" src="" alt="" /></div>
 <div class="modal-info">
 <span class="modal-brand" id="modalBrand"></span>
 <h2 class="modal-title" id="modalTitle"></h2>
 <p class="modal-price" id="modalPrice"></p>
 <p class="modal-desc" id="modalDesc"></p>
-<a class="modal-btn" id="modalLink" href="#" target="_blank" rel="noopener">
-VER PRODUCTO ↗
-</a>
-<p class="modal-disclaimer">Serás redirigido a la tienda externa.</p>
+<a class="modal-btn" id="modalLink" href="#" target="_blank" rel="noopener">VER PRODUCTO ↗</a>
+<p class="modal-disclaimer">Serás redirigido a la tienda original.</p>
 </div>
 </div>
 </div>
 
 <footer>
 <div class="footer-logo">GOLD<span>FANS</span></div>
-<p>© 2025 Gold Fans — Catálogo curado de lujo y streetwear.</p>
+<p class="footer-desc">Los mejores descuentos en moda de lujo. 100×100 original.</p>
+<div class="footer-brands">
+<span>EMPORIO ARMANI</span><span>·</span>
+<span>GUESS</span><span>·</span>
+<span>LACOSTE</span><span>·</span>
+<span>NIKE</span><span>·</span>
+<span>ADIDAS</span>
+</div>
+<p class="footer-copy">© 2025 Gold Fans — Todos los derechos reservados.</p>
 </footer>
 
 <script src="products.js"></script>
+
 <script src="app.js"></script>
+
 </body>
 </html>
